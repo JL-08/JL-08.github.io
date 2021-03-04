@@ -5,30 +5,28 @@ body {
   box-sizing: border-box;
 }
 
+.pa-10 {
+  padding: 10em;
+}
+
 .icon {
   height: 100px;
   width: 100px;
 }
 
-.full-screen {
-  height: 100vh;
-  width: 100vh;
-}
-
 .front-section {
   display: flex;
   width: 100%;
+  height: 800px;
 }
 
 .right {
   width: 65%;
-  border: 1px solid black;
-  padding: 2em 0 2em 5em;
+  padding: 2em 0 2em 10em;
 }
 
 .left {
   width: 35%;
-  border: 1px solid red;
 }
 
 nav {
@@ -83,4 +81,369 @@ nav a:hover {
 .main-title {
   font-size: 2.5em;
   letter-spacing: 1px;
+}
+
+.about-section {
+  width: 100%;
+  color: white;
+}
+
+.about-bg {
+  background-color: #1a1d88;
+}
+
+.pink-line {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 68px;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #ffc6ea;
+}
+.pink-line:before {
+  top: 10px;
+}
+.pink-line:before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  width: 50px;
+  height: 2px;
+  background: #ffc6ea;
+}
+
+.about-content h2 {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+
+.about-content h1 {
+  font-size: 4.5em;
+  word-spacing: 0.2em;
+  padding: -20px 0 -10px 0;
+}
+
+.offer-section {
+  width: 100%;
+  height: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-container img {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.offer-content {
+  display: flex;
+  margin-top: 2em;
+}
+
+.card {
+  padding: 2em;
+  width: 20em;
+  height: 35em;
+  margin-right: 2em;
+  border-radius: 2em;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.18);
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 20%;
+  left: 27%;
+}
+
+.img-container {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.img-bg {
+  margin: auto;
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+}
+
+#img-program {
+  background-color: #6792bf;
+}
+
+#img-learn {
+  background-color: #b691ff;
+}
+
+#img-attitude {
+  background-color: #fff675;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.proj-section {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.proj-content {
+  margin-top: 2em;
+}
+
+/* .proj-card {
+  background: #ffbffd;
+  background: linear-gradient(135deg, #ffbffd 0%, #ac63ff 100%);
+  width: 50%;
+  height: 40em;
+  border-radius: 2em;
+  position: relative;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.219);
+}
+
+.proj-card:hover {
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.18);
+}
+
+.proj-img-container {
+  border-radius: 2em 2em 0 0;
+  width: 100%;
+  height: 65%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.proj-img-bg {
+  height: 100%;
+  width: 100%;
+}
+
+.proj-img-bg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2em;
+}
+.proj-title-container {
+  width: 100%;
+  height: 35%;
+  padding: 2em;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 0 0 2em 2em;
+}  */
+
+.proj-container {
+  position: relative;
+}
+
+.proj-info-container {
+  background-color: #1a1d88;
+  color: white;
+  width: 70%;
+  height: 30em;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.proj-info {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+
+.proj-info h1 {
+  color: #ffc6ea;
+  margin: 0;
+}
+
+.proj-info h2 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.code-btn {
+  padding: 0.5em;
+  border-radius: 1em;
+  border: 1px solid #ffc6ea;
+  background-color: transparent;
+  color: white;
+}
+
+.code-btn:hover {
+  border: 1px solid #ffc6ea;
+  background-color: #ffc6ea;
+  color: #1a1d88;
+  cursor: pointer;
+}
+
+.code-btn:focus {
+  outline: none;
+}
+
+.tech-used {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.tech-used img {
+  width: 30px;
+  height: 30px;
+}
+
+.proj-preview {
+  background: #ffbffd;
+  background: linear-gradient(135deg, #ffbffd 0%, #ac63ff 100%);
+  width: 50%;
+  height: 25em;
+  position: absolute;
+  top: 2.4em;
+  left: 50%;
+  z-index: 1;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  width: 100%;
+}
+
+.contact-title-container {
+  margin-bottom: 2em;
+}
+
+.contact-title-container h1 {
+  font-size: 4.5em;
+  margin-bottom: -15px;
+}
+
+#contact-text {
+  margin-top: 2em;
+}
+
+.contact-info-container {
+  display: flex;
+}
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  width: 50%;
+}
+
+.contact-info-content i {
+  margin-bottom: 3em;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  width: 50%;
+  color: #797979;
+}
+
+.input-wrapper {
+  position: relative;
+  height: 3em;
+  margin-bottom: 1em;
+}
+
+.input-wrapper input {
+  box-sizing: border-box;
+  padding: 1em 1em 1em 5em;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #f6f6f6;
+  border: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #4c40f7;
+}
+
+.input-wrapper input:focus,
+.input-wrapper i {
+  outline: 0;
+  background-color: white;
+  color: #4c40f7;
+}
+
+.input-wrapper input:focus {
+  border: 3px solid #4c40f7;
+}
+
+.input-wrapper input:focus::placeholder {
+  color: #4c40f7;
+}
+.input-wrapper i {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+}
+
+.input-wrapper-textarea {
+  height: 10em;
+}
+.input-wrapper textarea {
+  box-sizing: border-box;
+  padding: 1.8em 1em 1em 5em;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #f6f6f6;
+  border: none;
+}
+
+.input-wrapper textarea:focus {
+  outline: 0;
+  background-color: white;
+  color: #4c40f7;
+  border: 3px solid #4c40f7;
+}
+
+.input-wrapper textarea::placeholder {
+  color: #4c40f7;
+}
+.input-wrapper textarea:focus::placeholder {
+  color: #4c40f7;
+}
+.input-wrapper-textarea i {
+  top: 15px;
+}
+
+.form-btn {
+  border: 3px solid #4c40f7;
+  border-radius: 1em;
+  background-color: transparent;
+  color: #4c40f7;
+  padding: 1em;
+}
+
+.form-btn:hover {
+  background-color: #4c40f7;
+  color: white;
+  cursor: pointer;
 }

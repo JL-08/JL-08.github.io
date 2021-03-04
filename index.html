@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <script
       src="https://kit.fontawesome.com/49079d7043.js"
       crossorigin="anonymous"
@@ -31,8 +32,8 @@
           </div>
           <div class="main-title">
             <h1>
-              Hello, My name is Janelle.<br />I build and develop web
-              applications.
+              Hello, My name is Janelle.<br />I build and develop <br />
+              web, mobile and desktop applications.
             </h1>
           </div>
         </div>
@@ -41,18 +42,23 @@
     </section>
 
     <!-- What I do -->
-    <section class="">
-      <div>
-        <div><span class="line"></span><span>What I do</span></div>
+    <section class="about-section">
+      <div class="pa-10 about-bg">
         <div>
+          <span class="pink-line">What I do</span>
+        </div>
+        <div class="about-content">
           <h2>
-            I ENJOY CREATING FULL STACK SOFTWARES WITH MY COMPLETE EFFORT AND
-            KNOWLEDGE
+            I ENJOY CREATING FULL STACK SOFTWARES <br />
+            WITH MY COMPLETE EFFORT AND KNOWLEDGE
           </h2>
-          <h1>PLAN. DESIGN. MAKE. SOLVE.</h1>
+          <h1>
+            PLAN. DESIGN.<br />
+            MAKE. SOLVE.
+          </h1>
           <div>
-            <h2>With these technical skills</h2>
-            <div>
+            <h2>Technologies I use</h2>
+            <div class="skills-container">
               <img
                 class="icon"
                 src="/images/icons/html.svg"
@@ -106,88 +112,181 @@
     </section>
 
     <!-- What I offer -->
-    <section class="">
-      <div><span class="line"></span><span>What I offer</span></div>
-      <div>
+    <section class="full-screen offer-section">
+      <div class="pa-10">
         <div>
-          <img />
-          <h1>Knowledge Modern Technology</h1>
-          <p>
-            I have a degree in Information Technology where I was taught various
-            tools and programming languages that I used in creating excellent
-            softwares. Furthmore, I am also self-studying other techs that I am
-            interested in.
-          </p>
+          <span class="line">What I offer</span>
         </div>
-        <div>
-          <img />
-          <h1>A Learning Spirit</h1>
-          <p>
-            I can do anything as long as I have the will to learn. One of my key
-            strength is that I am a fast learner and I believe my motivation to
-            learn more in what I do is what will lead me to success.
-          </p>
-        </div>
-        <div>
-          <img />
-          <h1>A Professional Attitude</h1>
-          <p>
-            A responsible person is always a welcome addition to any
-            organization. I take pride and effort on everything I do.
-            Additionally, I know I can influence others if I display a good
-            working attitude.
-          </p>
+        <div class="offer-content">
+          <div class="card">
+            <div class="img-container">
+              <div class="img-bg" id="img-program">
+                <img src="./images/icons/programming.svg" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h1>Knowledge in Modern Technology</h1>
+              <p>
+                I have a degree in Information Technology where I was taught
+                various tools and programming languages that I used in creating
+                excellent softwares. Furthmore, I am also self-studying other
+                techs that I am interested in.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <div class="img-bg" id="img-learn">
+                <img src="./images/icons/learning.svg" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h1>A Learning Spirit</h1>
+              <p>
+                I can do anything as long as I have the will to learn. One of my
+                key strength is that I am a fast learner. I believe my
+                motivation to learn more in what I do will lead me to success.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <div class="img-bg" id="img-attitude">
+                <img src="./images/icons/attitude.svg" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h1>A Professional Attitude</h1>
+              <p>
+                A responsible person is always a welcome addition to any
+                organization. I take pride and effort on everything I do.
+                Additionally, I know I can influence others if I display a good
+                working attitude.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Portfolio -->
-    <section class="">
-      <div><span class="line"></span><span>My Portfolio</span></div>
-      <div>
+    <section class="proj-section">
+      <div class="pa-10">
         <div>
-          <div>
-            <div>
-              <img />
+          <span class="line">My Projects</span>
+        </div>
+        <div class="proj-content">
+          <!-- <div class="proj-card">
+            <div class="proj-img-container">
+              <div class="proj-img-bg">
+                <img style="" src="./images/projects/sample.gif" />
+              </div>
             </div>
-          </div>
-          <div>
-            <h1>Chatters: A Realtime Chat Application</h1>
+            <div class="proj-title-container">
+              <h1>Chatters: A Realtime Chat Application</h1>
+              <p>NodeJS | ReactJS | MongoDB | Socket.io</p>
+            </div>
+          </div> -->
+          <div class="proj-container">
+            <div class="proj-info-container">
+              <div class="proj-info">
+                <h1>Chatters: A Real-Time Chat Application</h1>
+                <p>
+                  Chatters lets you chat with other users in a particular topic
+                  you are interested in. No need to create an account and just
+                  pick your desired topic and chat anonymously.
+                </p>
+                <p>
+                  This is the first project I created right after finishing
+                  studying ReactJS and NodeJS. I started this project in order
+                  to gain more experience with React and also to help me
+                  understand the client-server architecture of the web.
+                </p>
+                <a href="https://github.com/JL-08/chatters" target="_blank"
+                  ><button class="code-btn">
+                    <i class="fas fa-code"> View Code</i>
+                  </button></a
+                >
+
+                <div class="tech-used">
+                  <img src="./images/icons/html.svg" />
+                  <img src="./images/icons/css.svg" />
+                  <img src="./images/icons/tailwindcss.svg" />
+                  <img src="./images/icons/javascript.svg" />
+                  <img src="./images/icons/reactjs.svg" />
+                  <img src="./images/icons/nodejs.svg" />
+                  <img src="./images/icons/mongodb.svg" />
+                  <img src="./images/icons/socket-io.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="proj-preview">
+              <div class="carousel-wrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <div class="carousel-item item-1">
+                  <a class="arrow arrow-prev" href="#item-3"></a>
+                  <a class="arrow arrow-next" href="#item-2"></a>
+                </div>
+
+                <div class="carousel-item item-2">
+                  <a class="arrow arrow-prev" href="#item-1"></a>
+                  <a class="arrow arrow-next" href="#item-3"></a>
+                </div>
+
+                <div class="carousel-item item-3">
+                  <a class="arrow arrow-prev" href="#item-2"></a>
+                  <a class="arrow arrow-next" href="#item-1"></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Me -->
-    <section class="">
-      <div><span class="line"></span><span>Say Hello</span></div>
-      <div>
+    <section class="contact-section">
+      <div class="pa-10">
         <div>
-          <h1>Let's Work Together.</h1>
-          <p>
-            If you are still interested then I would love to sit down and
-            discuss future plans with you.
-          </p>
-          <p>
-            Here are ways to contact me. I am always reachable through them.
-          </p>
+          <span class="line">Get in touch</span>
         </div>
-
-        <div>
-          <div>
-            <i class="fas fa-envelope">Janellelacsamana@gmail.com</i>
-            <i class="fas fa-home"
-              >1313 Int. 25 San Andres St., Malate, Manila</i
-            >
-            <i class="fas fa-mobile-alt">09452937953</i>
+        <div class="contact-content">
+          <div class="contact-title-container">
+            <h1>Let's Work Together.</h1>
+            <p>
+              If you are still interested then I would love to sit down and<br />
+              discuss future plans with you.
+            </p>
+            <p id="contact-text">
+              Here are ways to contact me. I am always reachable through them.
+            </p>
           </div>
-          <div>
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Name" />
-            <i class="fas fa-paper-plane"></i>
-            <input type="text" placeholder="Email" />
-            <i class="fas fa-envelope-open-text"></i>
-            <input type="text" placeholder="Message" />
+
+          <div class="contact-info-container">
+            <div class="contact-info-content">
+              <i class="fas fa-envelope">Janellelacsamana@gmail.com</i>
+              <i class="fas fa-home"
+                >1313 Int. 25 San Andres St., Malate, Manila</i
+              >
+              <i class="fas fa-mobile-alt">09452937953</i>
+            </div>
+            <div class="contact-form-container">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Name"></input>
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="input-wrapper">
+                <i class="fas fa-at"></i>
+                <input type="text" placeholder="Email" />
+              </div>
+              <div class="input-wrapper input-wrapper-textarea">
+                <i class="fas fa-envelope-open-text"></i>
+                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+              </div>
+              <button class="form-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
           </div>
         </div>
       </div>
