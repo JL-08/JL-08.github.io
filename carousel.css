@@ -55,15 +55,15 @@
   .item-1 {
       z-index: 2;
       opacity: 1;
-      background-image: url("./images/projects/sample.gif");
+      background-image: url("./images/projects/chatters/chatters.gif");
       background-size:cover;
     }
   .item-2{
-    background-image: url("./images/icons/attitude.svg");
+    background-image: url("./images/projects/chatters/img1.PNG");
     background-size:cover;
   }
   .item-3{
-    background-image: url("./images/icons/css.svg");
+    background-image: url("./images/projects/chatters/img2.PNG");
     background-size:cover;
   }
   

@@ -19,13 +19,21 @@
   </head>
   <body>
     <!-- Front Page -->
+    <nav>
+      <div class="nav-left">
+        <a href="https://github.com/JL-08" target="_blank"><i class="fab fa-github"> Github</i></a>
+        <a href="https://linkedin.com/in/janelle-lacsamana-153b35205/" target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <a href="#about"><li>About Me</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#contact"><li><span>Hire me</span></li></a>
+        </ul>
+      </div>
+    </nav>
     <section class="full-screen front-section">
-      <div class="right">
-        <nav>
-          <i class="fab fa-github"> Github</i>
-          <i class="fab fa-linkedin"> LinkedIn</i>
-          <a href="">Hire Me</a>
-        </nav>
+      <div class="left">
         <div class="heading-wrapper">
           <div>
             <span class="line">Janelle Lacsamana</span>
@@ -38,16 +46,18 @@
           </div>
         </div>
       </div>
-      <aside class="left"></aside>
+      <aside class="right">
+        <img src="./images/teamwork.png">
+      </aside>
     </section>
 
     <!-- What I do -->
-    <section class="about-section">
-      <div class="pa-10 about-bg">
+    <section class="about-section" id="about">
+      <div class="about-bg">
+        <div class="pa-10 about-content">
         <div>
           <span class="pink-line">What I do</span>
         </div>
-        <div class="about-content">
           <h2>
             I ENJOY CREATING FULL STACK SOFTWARES <br />
             WITH MY COMPLETE EFFORT AND KNOWLEDGE
@@ -56,59 +66,99 @@
             PLAN. DESIGN.<br />
             MAKE. SOLVE.
           </h1>
-          <div>
+          <aside class="img-right">
+            <!-- <img src="./images/icons/web-dev.png" /> -->
+            <img src="./images/icons/dev.png">
+          </aside>
+        </div>
+          <div class='skills-bg'>
             <h2>Technologies I use</h2>
             <div class="skills-container">
-              <img
-                class="icon"
-                src="/images/icons/html.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/css.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/javascript.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/nodejs.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/reactjs.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/java.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/php.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/mysql.svg"
-                alt="JavaScript Logo"
-              />
-              <img
-                class="icon"
-                src="/images/icons/postgresql.svg"
-                alt="JavaScript Logo"
-              />
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/html.svg"
+                  alt="HTML Logo"
+                />
+                <span class="tooltiptext">HTML</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/css.svg"
+                  alt="CSS Logo"
+                />
+                <span class="tooltiptext">CSS</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/javascript.svg"
+                  alt="JavaScript Logo"
+                />
+                <span class="tooltiptext">JavaScript</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon white-bg-icon"
+                  src="/images/icons/nodejs.svg"
+                  alt="Node.JS Logo"
+                />
+                <span class="tooltiptext">Node.JS</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/reactjs.svg"
+                  alt="React.JS Logo"
+                />
+                <span class="tooltiptext">React.JS</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon white-bg-icon"
+                  src="/images/icons/java.svg"
+                  alt="Java Logo"
+                />
+                <span class="tooltiptext">Java</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/php.svg"
+                  alt="PHP Logo"
+                />
+                <span class="tooltiptext">PHP</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon white-bg-icon"
+                  src="/images/icons/mongodb.svg"
+                  alt="MongoDB Logo"
+                />
+                <span class="tooltiptext">MongoDB</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/mysql.svg"
+                  alt="MySQL Logo"
+                />
+                <span class="tooltiptext">MySQL</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  class="icon"
+                  src="/images/icons/postgresql.svg"
+                  alt="PostgreSQL Logo"
+                />
+                <span class="tooltiptext">PostgreSQL</span>
+              </div>
             </div>
           </div>
-        </div>
+        
+          
       </div>
-      <aside></aside>
     </section>
 
     <!-- What I offer -->
@@ -170,23 +220,12 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="proj-section">
+    <section class="proj-section" >
       <div class="pa-10">
         <div>
-          <span class="line">My Projects</span>
+          <span class="line" id="projects">My Projects</span>
         </div>
         <div class="proj-content">
-          <!-- <div class="proj-card">
-            <div class="proj-img-container">
-              <div class="proj-img-bg">
-                <img style="" src="./images/projects/sample.gif" />
-              </div>
-            </div>
-            <div class="proj-title-container">
-              <h1>Chatters: A Realtime Chat Application</h1>
-              <p>NodeJS | ReactJS | MongoDB | Socket.io</p>
-            </div>
-          </div> -->
           <div class="proj-container">
             <div class="proj-info-container">
               <div class="proj-info">
@@ -209,14 +248,70 @@
                 >
 
                 <div class="tech-used">
-                  <img src="./images/icons/html.svg" />
-                  <img src="./images/icons/css.svg" />
-                  <img src="./images/icons/tailwindcss.svg" />
-                  <img src="./images/icons/javascript.svg" />
-                  <img src="./images/icons/reactjs.svg" />
-                  <img src="./images/icons/nodejs.svg" />
-                  <img src="./images/icons/mongodb.svg" />
-                  <img src="./images/icons/socket-io.svg" />
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/html.svg"
+                      alt="HTML Logo"
+                    />
+                    <span class="tooltip-sm-text">HTML</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/css.svg"
+                      alt="CSS Logo"
+                    />
+                    <span class="tooltip-sm-text">CSS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/tailwindcss.svg"
+                      alt="TailwindCSS Logo"
+                    />
+                    <span class="tooltip-sm-text">TailwindCSS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/javascript.svg"
+                      alt="JavaScript Logo"
+                    />
+                    <span class="tooltip-sm-text">JavaScript</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/nodejs.svg"
+                      alt="Node.JS Logo"
+                    />
+                    <span class="tooltip-sm-text">Node.JS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/reactjs.svg"
+                      alt="React.JS Logo"
+                    />
+                    <span class="tooltip-sm-text">React.JS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/mongodb.svg"
+                      alt="MongoDB Logo"
+                    />
+                    <span class="tooltip-sm-text">MongoDB</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/socket-io.svg"
+                      alt="Socket.io Logo"
+                    />
+                    <span class="tooltip-sm-text">Socket.io</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,7 +345,7 @@
     <section class="contact-section">
       <div class="pa-10">
         <div>
-          <span class="line">Get in touch</span>
+          <span class="line" id="contact">Get in touch</span>
         </div>
         <div class="contact-content">
           <div class="contact-title-container">
@@ -266,11 +361,18 @@
 
           <div class="contact-info-container">
             <div class="contact-info-content">
-              <i class="fas fa-envelope">Janellelacsamana@gmail.com</i>
-              <i class="fas fa-home"
-                >1313 Int. 25 San Andres St., Malate, Manila</i
-              >
-              <i class="fas fa-mobile-alt">09452937953</i>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <span>Janellelacsamana@gmail.com </span>
+              </div>
+              <div>
+                <i class="fas fa-home"></i>
+                <span>1313 Int. 25 San Andres St., Malate, Manila</span>
+              </div>
+              <div>
+                <i class="fas fa-mobile-alt" style="padding-left: 5px;"></i>
+                <span>09452937953</span>
+              </div>
             </div>
             <div class="contact-form-container">
               <div class="input-wrapper">
