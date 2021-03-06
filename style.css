@@ -9,6 +9,10 @@ body {
   padding: 10em;
 }
 
+.pa-5 {
+  padding: 10em 5em;
+}
+
 .icon {
   height: 80px;
   width: 80px;
@@ -351,19 +355,20 @@ Project Section
 
 .proj-container {
   position: relative;
+  margin-bottom: 12em;
 }
 
 .proj-info-container {
   background-color: #1a1d88;
   color: white;
-  width: 70%;
+  width: 60%;
   height: 30em;
   padding: 2em;
   box-sizing: border-box;
 }
 
 .proj-info {
-  width: 70%;
+  width: 65%;
   height: 100%;
   position: relative;
 }
@@ -371,6 +376,14 @@ Project Section
 .proj-info h1 {
   color: #ffc6ea;
   margin: 0;
+}
+
+.proj-info a {
+  color: white;
+}
+
+.proj-info a:hover {
+  color: #ffc6ea;
 }
 
 .proj-info h2 {
@@ -418,11 +431,11 @@ Project Section
 .proj-preview {
   background: #ffbffd;
   background: linear-gradient(135deg, #ffbffd 0%, #ac63ff 100%);
-  width: 50%;
-  height: 25em;
+  width: 60%;
+  height: 30em;
   position: absolute;
   top: 2.4em;
-  left: 50%;
+  left: 42%;
   z-index: 1;
   padding: 1em;
   box-sizing: border-box;

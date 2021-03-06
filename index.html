@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel.css" />
     <script
@@ -221,7 +222,7 @@
 
     <!-- Portfolio -->
     <section class="proj-section" >
-      <div class="pa-10">
+      <div class="pa-5">
         <div>
           <span class="line" id="projects">My Projects</span>
         </div>
@@ -241,12 +242,11 @@
                   to gain more experience with React and also to help me
                   understand the client-server architecture of the web.
                 </p>
-                <a href="https://github.com/JL-08/chatters" target="_blank"
-                  ><button class="code-btn">
+                <a href="https://github.com/JL-08/chatters" target="_blank">
+                  <button class="code-btn">
                     <i class="fas fa-code"> View Code</i>
-                  </button></a
-                >
-
+                  </button>
+                </a>
                 <div class="tech-used">
                   <div class="tooltip-sm">
                     <img
@@ -316,25 +316,110 @@
               </div>
             </div>
             <div class="proj-preview">
-              <div class="carousel-wrapper">
-                <span id="item-1"></span>
-                <span id="item-2"></span>
-                <span id="item-3"></span>
-                <div class="carousel-item item-1">
-                  <a class="arrow arrow-prev" href="#item-3"></a>
-                  <a class="arrow arrow-next" href="#item-2"></a>
+              <div class="carouselContainer">
+                <div class="carouselImgs slide1">
+                  <img src="./images/projects/chatters/chatters.gif">
                 </div>
-
-                <div class="carousel-item item-2">
-                  <a class="arrow arrow-prev" href="#item-1"></a>
-                  <a class="arrow arrow-next" href="#item-3"></a>
+                <div class="carouselImgs slide2">
+                  <img src="./images/projects/chatters/img1.PNG">
                 </div>
-
-                <div class="carousel-item item-3">
-                  <a class="arrow arrow-prev" href="#item-2"></a>
-                  <a class="arrow arrow-next" href="#item-1"></a>
+                <div class="carouselImgs slide3">
+                  <img src="./images/projects/chatters/img2.PNG">
+                </div>
+                <span class="prev" id="prev"> < </span>
+                <span class="next" id="next"> > </span>
+             </div>
+            </div>
+          </div>
+          <div class="proj-container">
+            <div class="proj-info-container">
+              <div class="proj-info">
+                <h1>Face.ai: A Face Detection Application</h1>
+                <p>
+                  Face.ai offers a tool for users to paste an image link and detect faces on it which is indicated by a blue surrounding box.
+                </p>
+                <p>
+                  This is a project from a Udemy course that I took titled, <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank"><b>The Complete Web Developer in 2021: Zero to Mastery</b></a>. I have customized the app from the original and added feature to detect multiple faces. The app uses Clarifai api in order to detect faces in an image. 
+                </p>
+                <a href="https://github.com/JL-08/facerecog" target="_blank">
+                  <button class="code-btn">
+                    <i class="fas fa-code"> View Code</i>
+                  </button>
+                </a>
+                <div class="tech-used">
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/html.svg"
+                      alt="HTML Logo"
+                    />
+                    <span class="tooltip-sm-text">HTML</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/css.svg"
+                      alt="CSS Logo"
+                    />
+                    <span class="tooltip-sm-text">CSS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/tailwindcss.svg"
+                      alt="TailwindCSS Logo"
+                    />
+                    <span class="tooltip-sm-text">TailwindCSS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/javascript.svg"
+                      alt="JavaScript Logo"
+                    />
+                    <span class="tooltip-sm-text">JavaScript</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/nodejs.svg"
+                      alt="Node.JS Logo"
+                    />
+                    <span class="tooltip-sm-text">Node.JS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/reactjs.svg"
+                      alt="React.JS Logo"
+                    />
+                    <span class="tooltip-sm-text">React.JS</span>
+                  </div>
+                  <div class="tooltip-sm">
+                    <img
+                      class="icon"
+                      src="/images/icons/postgresql.svg"
+                      alt="PostgreSQL Logo"
+                    />
+                    <span class="tooltip-sm-text">PostgreSQL</span>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="proj-preview">
+              <div class="carouselContainer2">
+                <div class="carouselImgs2 slide4">
+                  <img src="./images/projects/face.ai/faceai.gif">
+                </div>
+                <div class="carouselImgs2 slide5">
+                  <img src="./images/projects/face.ai/img1.PNG">
+                </div>
+                <div class="carouselImgs2 slide6">
+                  <img src="./images/projects/face.ai/img2.PNG">
+                </div>
+                <span class="prev2" id="prev2"> < </span>
+                <span class="next2" id="next2"> > </span>
+             </div>
             </div>
           </div>
         </div>
@@ -392,6 +477,10 @@
           </div>
         </div>
       </div>
+
     </section>
+    
+
+    <script src="./carousel.js"></script>
   </body>
 </html>
