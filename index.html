@@ -9,17 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/49079d7043.js"
+      crossorigin="anonymous"
+    ></script>
     
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel.css" />
     <link rel="icon" 
       type="image/png" 
       href="./images/icons/logo.svg">
-    <script
-      src="https://kit.fontawesome.com/49079d7043.js"
-      crossorigin="anonymous"
-    ></script>
-
+      
     <title>My Portfolio</title>
   </head>
   <body>
@@ -229,10 +229,25 @@
     <section class="proj-section" >
       <div class="pa-5">
         <div>
-          <span class="line" id="projects">My Projects</span>
+          <span class="line" id="projects" style="margin-left: 2em;">My Projects</span>
         </div>
         <div class="proj-content">
           <div class="proj-container">
+            <div class="proj-preview">
+              <div class="carouselContainer">
+                <div class="carouselImgs slide1">
+                  <img src="./images/projects/chatters/chatters.gif">
+                </div>
+                <div class="carouselImgs slide2">
+                  <img src="./images/projects/chatters/img1.PNG">
+                </div>
+                <div class="carouselImgs slide3">
+                  <img src="./images/projects/chatters/img2.PNG">
+                </div>
+                <span class="prev" id="prev"> < </span>
+                <span class="next" id="next"> > </span>
+             </div>
+            </div>
             <div class="proj-info-container">
               <div class="proj-info">
                 <h1>Chatters: A Real-Time Chat Application</h1>
@@ -320,23 +335,23 @@
                 </div>
               </div>
             </div>
-            <div class="proj-preview">
-              <div class="carouselContainer">
-                <div class="carouselImgs slide1">
-                  <img src="./images/projects/chatters/chatters.gif">
-                </div>
-                <div class="carouselImgs slide2">
-                  <img src="./images/projects/chatters/img1.PNG">
-                </div>
-                <div class="carouselImgs slide3">
-                  <img src="./images/projects/chatters/img2.PNG">
-                </div>
-                <span class="prev" id="prev"> < </span>
-                <span class="next" id="next"> > </span>
-             </div>
-            </div>
           </div>
           <div class="proj-container">
+            <div class="proj-preview">
+              <div class="carouselContainer2">
+                <div class="carouselImgs2 slide4">
+                  <img src="./images/projects/face.ai/faceai.gif">
+                </div>
+                <div class="carouselImgs2 slide5">
+                  <img src="./images/projects/face.ai/img1.PNG">
+                </div>
+                <div class="carouselImgs2 slide6">
+                  <img src="./images/projects/face.ai/img2.PNG">
+                </div>
+                <span class="prev2" id="prev2"> < </span>
+                <span class="next2" id="next2"> > </span>
+             </div>
+            </div>
             <div class="proj-info-container">
               <div class="proj-info">
                 <h1>Face.ai: A Face Detection Application</h1>
@@ -411,21 +426,6 @@
                 </div>
               </div>
             </div>
-            <div class="proj-preview">
-              <div class="carouselContainer2">
-                <div class="carouselImgs2 slide4">
-                  <img src="./images/projects/face.ai/faceai.gif">
-                </div>
-                <div class="carouselImgs2 slide5">
-                  <img src="./images/projects/face.ai/img1.PNG">
-                </div>
-                <div class="carouselImgs2 slide6">
-                  <img src="./images/projects/face.ai/img2.PNG">
-                </div>
-                <span class="prev2" id="prev2"> < </span>
-                <span class="next2" id="next2"> > </span>
-             </div>
-            </div>
           </div>
         </div>
       </div>
@@ -466,18 +466,18 @@
             </div>
             <form class="contact-form-container">
               <div class="input-wrapper">
-                <input type="text" placeholder="Name"></input>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-at"></i>
+                <input type="text" placeholder="Email" id="email"/>
               </div>
               <div class="input-wrapper">
-                <i class="fas fa-heading"></i>
-                <input type="text" placeholder="Subject" />
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Subject" id="subject"></input>
               </div>
               <div class="input-wrapper input-wrapper-textarea">
                 <i class="fas fa-envelope-open-text"></i>
-                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
               </div>
-              <button class="form-btn" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+              <button class="form-btn" onclick="sendEmail(e)" disabled><i class="fas fa-paper-plane"></i> Send Message</button>
             </form>
           </div>
         </div>
