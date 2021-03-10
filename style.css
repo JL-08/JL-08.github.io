@@ -181,7 +181,7 @@ nav a {
   }
 
   .left {
-    width: 100%;
+    width: 80%;
     padding: 1em;
   }
 
@@ -190,7 +190,15 @@ nav a {
   }
 
   .front-section {
+    box-sizing: border-box;
+    padding: 2em;
     height: 550px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-title {
+    font-size: 1rem;
   }
 }
 /*
@@ -372,6 +380,10 @@ About Section
 }
 
 @media only screen and (max-width: 640px) {
+  .about-content {
+    padding: 2em 2em 0 2em;
+  }
+
   .img-right {
     display: none;
   }
@@ -519,6 +531,9 @@ Offer Section
 }
 
 @media only screen and (max-width: 640px) {
+  .offer-section {
+    padding: 2em;
+  }
   .offer-content {
     flex-direction: column;
   }
@@ -526,7 +541,7 @@ Offer Section
   .card {
     width: 100%;
     height: 20em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
   .card:hover {
@@ -730,7 +745,7 @@ Project Section
 
 @media only screen and (max-width: 640px) {
   .proj-preview {
-    height: 22em;
+    height: 16.5em;
   }
 
   .code-btn {
@@ -907,6 +922,10 @@ Contact Section
 }
 
 @media only screen and (max-width: 640px) {
+  .contact-section {
+    padding: 2em;
+  }
+
   .contact-info-container {
     flex-direction: column;
   }
