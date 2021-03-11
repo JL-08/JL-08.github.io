@@ -9,7 +9,7 @@ body {
 }
 
 .pa-5 {
-  padding: 10em 5em;
+  padding: 10em 5em 1em 5em;
 }
 /*
 
@@ -578,7 +578,7 @@ Project Section
 
 .proj-container {
   position: relative;
-  margin-bottom: 12em;
+  margin-bottom: 10em;
 }
 
 .proj-info-container {
@@ -705,7 +705,7 @@ Project Section
     height: 20em;
   }
   .pa-5 {
-    padding: 5em 2em;
+    padding: 5em 2em 2em 2em;
   }
 }
 
@@ -746,6 +746,7 @@ Project Section
   .proj-info h1 {
     font-size: 1rem;
   }
+
   .proj-info p {
     font-size: 0.8rem;
   }
