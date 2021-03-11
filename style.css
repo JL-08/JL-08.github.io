@@ -537,7 +537,7 @@ Offer Section
   .card {
     width: 100%;
     height: 20em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .card:hover {
