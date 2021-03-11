@@ -193,7 +193,7 @@ nav a {
   }
 
   .front-section {
-    padding: 2em;
+    padding: 1em;
     height: 550px;
   }
 }
@@ -201,6 +201,16 @@ nav a {
 @media only screen and (max-width: 500px) {
   .main-title {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .main-title {
+    font-size: 1rem;
+  }
+
+  .line-name {
+    font-size: 1rem;
   }
 }
 /*
