@@ -103,3 +103,13 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .next,
+  .prev,
+  .prev2,
+  .next2 {
+    font-size: 3rem;
+    top: 40%;
+  }
+}
