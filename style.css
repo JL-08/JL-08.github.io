@@ -31,9 +31,10 @@ Preloader
 
 */
 
-main {
+/* main {
   display: none;
 }
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -151,7 +152,7 @@ figure {
   66% {
     opacity: 0;
   }
-}
+} */
 
 /*
 
