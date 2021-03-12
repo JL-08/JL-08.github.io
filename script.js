@@ -2,8 +2,14 @@ $(document).ready(function () {
   $('.carousel').slick({
     dots: true,
     infinite: true,
-    respondTo: 'slider',
-    waitForAnimate: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 });
 
