@@ -166,7 +166,6 @@ Navigation Bar
 
 nav {
   height: 4em;
-
   display: flex;
 }
 
@@ -357,7 +356,7 @@ nav a {
 .menu-list li {
   list-style: none;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 1rem;
 }
 
@@ -368,12 +367,8 @@ nav a {
 
 .link-list li {
   list-style: none;
-  font-size: 3rem;
+  font-size: 2rem;
 }
-
-/* .link-list .gi {
-  margin-right: 1em;
-} */
 
 .link-list a {
   color: white;
@@ -401,11 +396,11 @@ nav a {
 
 @media only screen and (max-width: 500px) {
   .menu-list li {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .link-list li {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 

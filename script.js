@@ -15,9 +15,10 @@ $(document).ready(function () {
 
 window.onload = function () {
   const body = document.querySelector('body');
-  var preloader = document.querySelector('.preloader');
+  const preloader = document.querySelector('.preloader');
 
-  body.style.overflow = 'visible';
+  body.style.overflowX = 'hidden';
+  body.style.overflowY = 'visible';
   preloader.style.display = 'none';
 };
 
