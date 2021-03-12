@@ -13,6 +13,14 @@ $(document).ready(function () {
   });
 });
 
+window.onload = function () {
+  const body = document.querySelector('body');
+  var preloader = document.querySelector('.preloader');
+
+  body.style.overflow = 'visible';
+  preloader.style.display = 'block';
+};
+
 const toggleHandler = () => {
   const toggler = document.querySelector('.toggler');
   const body = document.querySelector('body');
