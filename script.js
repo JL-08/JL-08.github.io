@@ -18,7 +18,7 @@ window.onload = function () {
   var preloader = document.querySelector('.preloader');
 
   body.style.overflow = 'visible';
-  preloader.style.display = 'block';
+  preloader.style.display = 'none';
 };
 
 const toggleHandler = () => {
