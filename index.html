@@ -10,9 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="carousel.css" />
+    <!-- <link rel="stylesheet" href="carousel.css" /> -->
     <link rel="icon" 
       type="image/png" 
       href="./images/icons/logo.svg">
@@ -69,7 +71,7 @@
         </div>
       </div>
       <aside class="right" data-aos="fade" data-aos-delay="500" data-aos-once="false" data-aos-mirror="true">
-        <img src="./images/teamwork.png">
+        <img src="./images/icons/teamwork.png">
       </aside>
     </section>
 
@@ -84,7 +86,7 @@
             I ENJOY CREATING FULL STACK SOFTWARES <br />
             WITH MY COMPLETE EFFORT AND KNOWLEDGE
           </h2>
-          <h1 data-aos="flip-down" data-aos-delay="500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+          <h1 data-aos="flip-down" data-aos-delay="300" data-aos-mirror="true" data-aos-anchor-placement="top-center">
             PLAN. DESIGN.<br />
             MAKE. SOLVE.
           </h1>
@@ -95,7 +97,7 @@
         </div>
           <div class='skills-bg'>
             <h2>Technologies I use</h2>
-            <div class="skills-container" data-aos="fade" data-aos-delay="700" data-aos-mirror="true" data-aos-anchor-placement="center-bottom">
+            <div class="skills-container" data-aos="fade" data-aos-delay="500" data-aos-mirror="true" data-aos-anchor-placement="center-bottom">
               <div class="tooltip">
                 <img
                   class="icon"
@@ -190,7 +192,7 @@
           <span class="line">What I offer</span>
         </div>
         <div class="offer-content">
-          <div class="card">
+          <div class="card" data-aos="zoom-out-down" data-aos-mirror="true" data-aos-anchor-placement="center-bottom">
             <div class="img-container">
               <div class="img-bg" id="img-program">
                 <img src="./images/icons/programming.svg" />
@@ -206,7 +208,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-down" data-aos-delay="200" data-aos-mirror="true" data-aos-anchor-placement="center-bottom">
             <div class="img-container">
               <div class="img-bg" id="img-learn">
                 <img src="./images/icons/learning.svg" />
@@ -221,7 +223,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-down" data-aos-delay="400" data-aos-mirror="true" data-aos-anchor-placement="center-bottom">
             <div class="img-container">
               <div class="img-bg" id="img-attitude">
                 <img src="./images/icons/attitude.svg" />
@@ -250,18 +252,16 @@
         <div class="proj-content">
           <div class="proj-container">
             <div class="proj-preview" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
-              <div class="carouselContainer">
-                <div class="carouselImgs slide1">
+              <div class="carousel">
+                <div class="carousel-imgs">
                   <img src="./images/projects/chatters/chatters.gif">
                 </div>
-                <div class="carouselImgs slide2">
+                <div class="carousel-imgs">
                   <img src="./images/projects/chatters/img1.PNG">
                 </div>
-                <div class="carouselImgs slide3">
+                <div class="carousel-imgs">
                   <img src="./images/projects/chatters/img2.PNG">
                 </div>
-                <span class="prev" id="prev"> < </span>
-                <span class="next" id="next"> > </span>
              </div>
             </div>
             <div class="proj-info-container">
@@ -354,18 +354,16 @@
           </div>
           <div class="proj-container">
             <div class="proj-preview" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
-              <div class="carouselContainer2">
-                <div class="carouselImgs2 slide4">
+              <div class="carousel">
+                <div class="carousel-imgs">
                   <img src="./images/projects/face.ai/faceai.gif">
                 </div>
-                <div class="carouselImgs2 slide5">
+                <div class="carousel-imgs">
                   <img src="./images/projects/face.ai/img1.PNG">
                 </div>
-                <div class="carouselImgs2 slide6">
+                <div class="carousel-imgs">
                   <img src="./images/projects/face.ai/img2.PNG">
                 </div>
-                <span class="prev2" id="prev2"> < </span>
-                <span class="next2" id="next2"> > </span>
              </div>
             </div>
             <div class="proj-info-container">
@@ -509,7 +507,10 @@
       src="https://kit.fontawesome.com/49079d7043.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="./script.js"></script>
-    <script src="./carousel.js"></script>
+    <!-- <script src="./carousel.js"></script> -->
+
   </body>
 </html>

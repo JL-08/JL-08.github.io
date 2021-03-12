@@ -1,3 +1,12 @@
+$(document).ready(function () {
+  $('.carousel').slick({
+    dots: true,
+    infinite: true,
+    respondTo: 'slider',
+    waitForAnimate: true,
+  });
+});
+
 const toggleHandler = () => {
   const toggler = document.querySelector('.toggler');
   const body = document.querySelector('body');
