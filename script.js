@@ -1,18 +1,3 @@
-$(document).ready(function () {
-  $('.carousel').slick({
-    dots: true,
-    infinite: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
-  });
-});
-
 window.onload = function () {
   const body = document.querySelector('body');
   const preloader = document.querySelector('.preloader');

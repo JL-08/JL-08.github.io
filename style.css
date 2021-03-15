@@ -983,6 +983,7 @@ Project Section
   left: 42%;
   z-index: 1;
   padding: 1em;
+  height: 30em;
 }
 
 .carousel {
@@ -1001,6 +1002,26 @@ Project Section
   height: 100%;
 }
 
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .portrait-img {
+  width: initial;
+}
+
 @media only screen and (max-width: 1438px) {
   .proj-info p {
     font-size: 0.8rem;
@@ -1010,6 +1031,10 @@ Project Section
 @media only screen and (max-width: 1200px) {
   .proj-info p {
     font-size: 0.8rem;
+  }
+
+  .proj-preview {
+    height: 25em;
   }
 }
 
@@ -1040,6 +1065,10 @@ Project Section
   .pa-5 {
     padding: 5em 2em 2em 2em;
   }
+
+  .proj-preview {
+    height: 20em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1055,12 +1084,6 @@ Project Section
     width: 100%;
     height: 100%;
   }
-
-  .carousel {
-    width: 100%;
-    height: 100%;
-  }
-
   .pa-5 {
     padding: 5em 0 0 0;
   }
@@ -1080,6 +1103,16 @@ Project Section
 
   .proj-info {
     width: 100%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    top: 5px;
   }
 
   .tech-used {
