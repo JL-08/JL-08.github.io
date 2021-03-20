@@ -1,16 +1,17 @@
 const sendEmail = (e) => {
-  console.log(e);
-  let fromEmail = document.getElementById('email').value;
-  let subject = document.getElementById('subject').value;
-  let message = document.getElementById('message').value;
+  e.preventDefault();
+  const fromEmail = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  const toEmail = 'janellelacsamana@gmail.com';
 
-  if (name || fromEmail || message) {
+  if (subject || fromEmail || message) {
     if (
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
         fromEmail
       )
     ) {
-      // send email code here
+      // window.open(`mailto:${toEmail}?subject=${subject}&body=${message}`);
     } else {
       alert('Please input a valid email address');
     }
