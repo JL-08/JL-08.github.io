@@ -1,7 +1,6 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -95,6 +94,22 @@ figure {
   bottom: 0;
   background: #33b5e5;
   animation: dotsX 2.4s linear infinite;
+}
+
+.preloader > div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 6.25em;
+  height: 10em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
 }
 
 @keyframes rotate {
