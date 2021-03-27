@@ -1427,3 +1427,28 @@ TOOLTIP
 .tooltip-sm:hover .tooltip-sm-text {
   visibility: visible;
 }
+
+/*
+
+
+
+
+
+============================
+Footer
+============================ 
+
+
+
+
+
+
+*/
+
+footer {
+  width: 100%;
+  height: 3em;
+  color: #c0c0c0;
+  text-align: center;
+  font-size: 1rem;
+}
