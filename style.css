@@ -1044,10 +1044,6 @@ Project Section
 }
 
 @media only screen and (max-width: 1340px) {
-  .proj-info p {
-    font-size: 0.8rem;
-  }
-
   .proj-info-container {
     height: 40vw;
   }
@@ -1065,14 +1061,6 @@ Project Section
     font-size: 0.7rem;
   }
 
-  .proj-info-container {
-    height: 40vw;
-  }
-
-  .proj-preview {
-    height: 35vw;
-  }
-
   .tech-used {
     padding: 5px;
     border-radius: 10px;
@@ -1087,10 +1075,6 @@ Project Section
 @media only screen and (max-width: 992px) {
   .pa-5 {
     padding: 5em 2em 2em 2em;
-  }
-
-  .proj-preview {
-    height: 35vw;
   }
 
   .proj-info-container {
@@ -1166,6 +1150,24 @@ Project Section
 
   .code-btn {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .proj-preview {
+    height: 60vw;
+  }
+
+  .proj-info-container {
+    height: 90vw;
+  }
+
+  .proj-info p {
+    font-size: 0.6rem;
+  }
+
+  .code-btn {
+    font-size: 0.7rem;
   }
 }
 /*
