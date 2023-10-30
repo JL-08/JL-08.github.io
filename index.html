@@ -732,7 +732,7 @@
               </div>
               <div>
                 <i class="fas fa-home"></i>
-                <span>1313 Int. 25 San Andres St., Malate, Manila</span>
+                <span>Manila City, Philippines</span>
               </div>
               <div>
                 <i class="fas fa-mobile-alt" style="padding-left: 5px;"></i>
@@ -752,7 +752,10 @@
                 <i class="fas fa-envelope-open-text"></i>
                 <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
               </div>
-              <button class="form-btn" onclick="sendEmail(e)" disabled><i class="fas fa-paper-plane"></i> Send Message</button>
+              <div class="tooltip">
+                <button class="form-btn disabled" onclick="sendEmail(e)" disabled><i class="fas fa-paper-plane"></i> Send Message</button>
+                <span class="tooltiptext tooltip-btn">Email service is disabled</span>
+              </div>
             </form>
           </div>
         </div>
@@ -760,7 +763,7 @@
     </section>
     
     <footer>
-      <span>© 2021 Janelle Lacsamana</span>
+      <span>© 2023 Janelle Lacsamana</span>
     </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

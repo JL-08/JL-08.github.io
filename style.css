@@ -1,6 +1,7 @@
 html,
 body {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -503,6 +504,11 @@ Front Section
 }
 
 @media only screen and (max-width: 992px) {
+  .main-title {
+    font-size: 2rem;
+    width: unset;
+  }
+
   .right img {
     width: 17em;
     height: 30em;
@@ -520,7 +526,7 @@ Front Section
 
 @media only screen and (max-width: 640px) {
   .left {
-    width: 80%;
+    width: 100%;
     padding: 1em;
   }
 
@@ -629,7 +635,8 @@ About Section
 
 .skills-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skills-container img {
@@ -645,6 +652,12 @@ About Section
 .white-bg-icon {
   padding: 8px;
   background-color: white;
+}
+
+@media only screen and (min-width: 1800px) {
+  .skills-container {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 1326px) {
@@ -763,7 +776,6 @@ Offer Section
 .card {
   padding: 2em;
   width: 40%;
-  height: 38em;
   margin-right: 2em;
   border-radius: 2em;
 }
@@ -839,7 +851,6 @@ Offer Section
 
 @media only screen and (max-width: 992px) {
   .card {
-    height: 35em;
     font-size: 0.725rem;
   }
 
@@ -871,7 +882,6 @@ Offer Section
     padding: 1em;
     margin-right: 0.5em;
     width: 40%;
-    height: 38em;
   }
 }
 
@@ -882,7 +892,6 @@ Offer Section
 
   .card {
     width: 100%;
-    height: 20em;
     height: auto;
   }
 
@@ -1038,6 +1047,11 @@ Project Section
   width: initial;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  font-weight: bolder;
+}
+
 @media only screen and (max-width: 1536px) {
   .proj-info p {
     font-size: 0.8rem;
@@ -1084,6 +1098,11 @@ Project Section
 
   .proj-info {
     width: 70%;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 2rem;
   }
 }
 
@@ -1274,6 +1293,7 @@ Contact Section
 .input-wrapper-textarea {
   height: 10em;
 }
+
 .input-wrapper textarea {
   padding: 1.8em 1em 1em 5em;
   width: 100%;
@@ -1301,6 +1321,7 @@ Contact Section
 }
 
 .form-btn {
+  width: 100%;
   border: 3px solid #4c40f7;
   border-radius: 1em;
   background-color: transparent;
@@ -1312,6 +1333,16 @@ Contact Section
   background-color: #4c40f7;
   color: white;
   cursor: pointer;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 1800px) {
+  .input-wrapper textarea, .input-wrapper input {
+    padding-left: 100px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1408,6 +1439,14 @@ TOOLTIP
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.tooltip .tooltip-btn {
+  width: unset;
+  left: 44%;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .tooltip-sm {
